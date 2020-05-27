@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
 import config from '../../config';
+
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -9,6 +10,7 @@ export default class Header extends Component {
       visibilityClass: '',
     };
   }
+  
   toggleMenu = value => {
     this.setState({ openMenu: value });
   };
@@ -25,6 +27,11 @@ export default class Header extends Component {
     }
   };
 
+  showTitle = () => {
+    const { visibilityClass } = this.state;
+    return visibilityClass === '' ? '' : 'brand-show'
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
@@ -40,9 +47,11 @@ export default class Header extends Component {
         id="mainNav"
       >
         <div className="container">
-          <a className="navbar-brand" href="#page-top">
+          <div>
+          <a className={`navbar-brand ${this.showTitle()}`} href="#page-top">
             {config.siteTitle}
           </a>
+          </div>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
@@ -87,10 +96,10 @@ export default class Header extends Component {
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}
                   type="id"
-                  element="signup"
+                  element="projects"
                 >
-                  <a className="nav-link" href="#signup">
-                    Contact
+                  <a className="nav-link" href="#photography">
+                    Photography
                   </a>
                 </Scroll>
               </li>

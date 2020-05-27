@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Grayscale', // <title>
-  manifestName: 'Grayscale',
+  siteTitle: 'David Delgado', // <title>
+  manifestName: 'Portfolio',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
@@ -8,33 +8,30 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  heading: 'David Delgado',
+  subHeading: 'Full-Stack Software Developer',
 
   // social
   socialLinks: [
     {
-      icon: 'fa-github',
+      icon: 'fab fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/djdelgado',
     },
     {
-      icon: 'fa-linkedin-in',
+      icon: 'fab fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/theanubhav/',
+      url: 'https://linkedin.com/in/david-j-delgado/',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      icon: 'fab fa-instagram',
+      name: 'Instagram',
+      url: 'https://www.instagram.com/bigdaytoday/',
     },
     {
-      icon: 'fa-facebook-f',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      icon: 'fas fa-envelope',
+      name: 'Email',
+      url: 'mailto:djd9062@gmail.com',
     },
-  ],
-  email: 'anubhav.srivastava00@gmail.com',
-  phone: '000-00000',
-  address: '305 Del Sol, Sunnyvale, CA',
+  ]
 };
