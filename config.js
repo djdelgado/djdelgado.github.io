@@ -11,6 +11,24 @@ module.exports = {
   heading: 'David Delgado',
   subHeading: 'Full-Stack Software Developer',
 
+  //projects
+  projects: [
+    {
+      id: 1,
+      name: 'POA',
+      title: 'Plant Operations Advisor',
+      imgUrl: '/images/Excursion-Layout.jpg',
+      description: 'TODO'
+    },
+    {
+      id: 2,
+      name: 'TravelPack',
+      title: 'TravelPack',
+      imgUrl: '/images/travelpack.jpeg',
+      description: 'TODO'
+    }
+  ],
+
   // social
   socialLinks: [
     {

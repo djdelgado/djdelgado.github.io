@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "POA",
+      "title": "Plant Operations Advisor",
+      "imgUrl": "Excursion-Layout.jpg",
+      "description": "TODO"
+    },
+    {
+      "id": 2,
+      "name": "TravelPack",
+      "title": "TravelPack",
+      "imgUrl": "travelpack.jpeg",
+      "description": "TODO"
+    }
+  ]
+}
