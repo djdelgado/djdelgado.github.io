@@ -17,14 +17,14 @@ module.exports = {
       id: 1,
       name: 'POA',
       title: 'Plant Operations Advisor',
-      imgUrl: '/images/Excursion-Layout.jpg',
+      imgUrl: 'images/Excursion-Layout.jpg',
       description: 'TODO'
     },
     {
       id: 2,
       name: 'TravelPack',
       title: 'TravelPack',
-      imgUrl: '/images/travelpack.jpeg',
+      imgUrl: 'images/travelpack.jpeg',
       description: 'TODO'
     }
   ],
