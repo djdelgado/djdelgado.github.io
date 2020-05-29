@@ -11,7 +11,6 @@ class InfoCard extends React.Component {
   };
   constructor() {
     super();
-    // this.handleClick = this.handleClick.bind(this);
   }
 	render() {
 		const { title, imgUrl } = this.props;
