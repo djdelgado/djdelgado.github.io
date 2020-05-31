@@ -71,9 +71,12 @@ class ProjectSection extends React.Component {
               <div className="card-body text-center">
               <h4 className="text-uppercase m-0">{this.state.project?.title}</h4>
                 <hr className="my-4" />
-                <div className="info-img small text-black-50">
+                <p>{this.state.project?.description}</p>
+                {this.state.project?.link && <a href={this.state.project?.link}>Link to project</a>}
+                <div className="info-img small text-black-50 mt-4 mb-4">
                   <img src={this.state.project?.imgUrl} ></img>
                 </div>
+                {this.state.project?.newsUrl && <a href={this.state.project?.newsUrl}>References</a>}
               </div>
             </div>
           </div>

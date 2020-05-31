@@ -18,14 +18,25 @@ module.exports = {
       name: 'POA',
       title: 'Plant Operations Advisor',
       imgUrl: 'images/Excursion-Layout.jpg',
-      description: 'TODO'
+      description: 'POA is a cloud-based advanced analytics solution developed for BP by Baker Hughes. \
+      We developed multiple micro applications to monitor and analyze data from oil & gas plants around the world to optimize equipment and plant reliability. \
+      Leveraging HighCharts.js library we were able to display millions of streaming time-series data points. \
+      I created and styled custom modules to render key performance metrics and \
+      reduced network traffic by implementing GraphQL queries and mutations',
+      newsUrl: 'https://www.bp.com/en/global/corporate/news-and-insights/press-releases/bp-deploys-plant-operations-advisor-on-gulf-of-mexico-platforms.html' 
     },
     {
       id: 2,
       name: 'TravelPack',
       title: 'TravelPack',
       imgUrl: 'images/travelpack.jpeg',
-      description: 'TODO'
+      description: 'Travelpack is a cross-platform application that allows users to communicate \
+        in real time as they plan their trips. The app was created as part of our thesis project for the bootcamp I attended.\n\
+        Users can search through tourist attractions and \ add items to the group (pack) itinerary. \
+        Travelpack comes with a built in budget calculator that helps packs estimate the cost of their trip as well as a packing list. \
+        During the trip, users can utilize Travelpack’s Find My Pack feature to pinpoint real time \
+        locations of pack members and upload photos to the pack photo album to keeps all of their memories in one place!',
+      link: 'https://github.com/three-stacks/travelpack'
     }
   ],
 
