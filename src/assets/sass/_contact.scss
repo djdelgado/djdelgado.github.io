@@ -44,13 +44,24 @@
       border-width: 0.25rem;
       width: 50%;
     }
+    p {
+      font-size: 0.7rem;
+    }
     .info-img {
       margin: auto;
-      width: 75%;
+      width: 100%;
     }
     img {
       width: 75%;
       height: auto;
+    }
+    @media (min-width: 768px) {
+      p { 
+        font-size: 1rem;
+      }
+      .info-img {
+        width: 75%;
+      }
     }
   }
 }
