@@ -1,4 +1,4 @@
-# Davis Delgado's Portfolio Site
+# David Delgado's Portfolio Site
 [Click Here](https://djdelgado.github.io/portfolio-site)
 
 Project is based off the Gatsby starter template below.
