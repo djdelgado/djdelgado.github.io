@@ -41,13 +41,21 @@ const IndexPage = () => (
               <img className="profile-pic" src={profilePic}></img>
             </div>
             <p className="text-white-50">
-              I am a Software Engineer with experience in developing full-stack enterprise level applications
+              I am a full-time Software Developer in New Orleans, LA, with experience designing and developing full-stack enterprise-level applications.
+              I have a passion for coding and a knack for debugging.
+              My new found hobby is analog and digital photography. Check out some pics below.
             </p>
+            <hr className="my-4"></hr>
+            <h4 className="text-white">Skills</h4>
+            <div className="d-flex flex-wrap justify-content-center">
+              {config.skills.map((skill) =>
+                <p className="text-white-50 ml-4" >{skill}</p>
+              )}
+            </div>
           </div>
         </div>
       </div>
     </section>
-
 
     <ProjectSection />
     <PhotoSection />

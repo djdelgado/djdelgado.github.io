@@ -1,8 +1,11 @@
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
-  p {
-    margin-bottom: 5rem;
+
+  hr {
+    border-color: $primary;
+    border-width: 0.25rem;
+    width: 50%;
   }
 }
 
@@ -10,9 +13,6 @@
 .project-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #{fade-out($black, .2)}, #{fade-out($black, .3)} 75%,#{fade-out($black, .4)} 100%);
-  p {
-    margin-bottom: 5rem;
-  }
 }
 
 .profile-pic {

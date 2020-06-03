@@ -28,11 +28,18 @@
   bottom: auto;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 80vw;
+  height: 80vh;
   border-bottom: 0.25rem solid $primary;
 }
 .info-modal {
+  height: 100%;
   .card {
+    overflow: hidden;
+    height: 100%;
+    .card-body {
+      overflow: auto;
+    }
     h4 {
       font-size: 0.8rem;
       font-family: 'Varela Round';
@@ -52,8 +59,8 @@
       width: 100%;
     }
     img {
-      width: 75%;
-      height: auto;
+      max-width: 100%;
+      max-height: 100%;
     }
     @media (min-width: 768px) {
       p { 
@@ -61,6 +68,7 @@
       }
       .info-img {
         width: 75%;
+        height: 70%;
       }
     }
   }
@@ -69,9 +77,9 @@
 
 
 .contact-section {
-  padding: 5rem 0 0;
+  padding: 3rem 0 0;
   .social {
-    margin-top: 5rem;
+    margin-top: 3rem;
     a {
       text-align: center;
       height: 3rem;

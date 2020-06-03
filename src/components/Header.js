@@ -43,7 +43,7 @@ export default class Header extends Component {
     const { openMenu, visibilityClass } = this.state;
     return (
       <nav
-        className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
+        className={`navbar navbar-expand-md navbar-light fixed-top ${visibilityClass}`}
         id="mainNav"
       >
         <div className="container">
