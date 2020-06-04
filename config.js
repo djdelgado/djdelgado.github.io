@@ -40,7 +40,7 @@ module.exports = {
     }
   ],
 
-  skills: [ 'JavaScript', 'TypeScript', 'React.js', 'Angular', 'Sass', 'Apollo', 'CSS', 'Redux', 'Java', 'Spring', 'REST', 'GraphQL', 'Node.js', 'Docker', 'Chai', 'Mocha', 'Jest', 'SQL', 'PostgreSQL', 'Git', 'AWS', 'CICD', 'Jenkins', 'Rally' ],
+  skills: [ 'JavaScript', 'TypeScript', 'React.js', 'Angular', 'Sass', 'Java', 'Spring', 'REST', 'GraphQL', 'Apollo', 'CSS', 'Redux', 'Node.js', 'Docker', 'Jasmine', 'SQL', 'PostgreSQL', 'Git', 'AWS', 'CICD', 'Jenkins', 'Rally' ],
 
   // social
   socialLinks: [
