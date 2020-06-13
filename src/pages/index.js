@@ -48,8 +48,8 @@ const IndexPage = () => (
             <hr className="my-4"></hr>
             <h4 className="text-white">Skills</h4>
             <div className="d-flex flex-wrap justify-content-center">
-              {config.skills.map((skill) =>
-                <p className="text-white-50 ml-4" >{skill}</p>
+              {config.skills.map((skill, i) =>
+                <p className="text-white-50 ml-4" key={i}>{skill}</p>
               )}
             </div>
           </div>
