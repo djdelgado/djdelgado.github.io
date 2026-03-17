@@ -6,6 +6,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   build: {
+    outDir: 'docs',
     minify: false,
     sourcemap: false,
     cssCodeSplit: false,

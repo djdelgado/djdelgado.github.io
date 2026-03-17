@@ -3689,7 +3689,7 @@ const Card = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PUR
   {
     ref,
     className: cn(
-      "h-[400px] w-[400px] rounded-lg border bg-card text-card-foreground shadow-sm hover:scale-110 transition-transform",
+      "h-[400px] w-full rounded-lg border bg-card text-card-foreground shadow-sm hover:scale-110 transition-transform",
       className
     ),
     ...props
@@ -3742,38 +3742,52 @@ const poaImg = "/assets/Excursion-Layout-295ce06a.jpg";
 
 const travelpackImg = "/assets/travelpack-8169912a.jpeg";
 
+const avidImg = "/assets/avid-43c004c5.webp";
+
 const projectsData = [
   {
     id: 1,
     title: "POA",
     image: poaImg,
-    description: "A project management application"
+    description: "Plant Operations Advisor, a digital twin solution for offshore platforms",
+    link: "https://www.bp.com/en/global/corporate/news-and-insights/press-releases/bp-deploys-plant-operations-advisor-on-gulf-of-mexico-platforms.html"
   },
   {
     id: 2,
-    title: "TRAVELPACK",
+    title: "Travelpack",
     image: travelpackImg,
-    description: "A travel planning application"
+    description: "A travel planning application",
+    link: "https://github.com/three-stacks/travelpack"
+  },
+  {
+    id: 3,
+    title: "Avid Suite",
+    image: avidImg,
+    description: "A suite of applications for accounts payable automation",
+    link: "https://www.avidxchange.com/"
   }
 ];
 const Projects = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("section", { id: "projects", className: "py-20 bg-[#222] text-white text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-4xl font-bold mb-6", children: "Projects" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Separator, { className: "bg-[#64A19D] h-0.5 w-16 mx-auto mb-10" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto", children: projectsData.map((project) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-col items-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-stone-100 text-black overflow-hidden w-full max-w-md", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto", children: projectsData.map((project) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-col items-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: project.link, className: "w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-stone-100 text-black overflow-hidden w-full max-w-md cursor-pointer", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "p-4 pb-2", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-xl font-bold text-center", children: project.title }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Separator, { className: "bg-[#64A19D] h-0.5 w-12 mx-auto my-2" })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "p-4 pt-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "img",
-        {
-          src: project.image,
-          alt: project.title,
-          className: "w-full h-auto object-cover"
-        }
-      ) })
-    ] }) }, project.id)) })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-4 pt-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "img",
+          {
+            src: project.image,
+            alt: project.title,
+            className: "w-full h-auto object-cover"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-sm text-gray-700", children: project.description })
+      ] })
+    ] }) }) }, project.id)) })
   ] }) });
 };
 
