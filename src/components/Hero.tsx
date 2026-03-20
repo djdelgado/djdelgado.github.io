@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import oneShellImg from "@/assets/oneshell.jpg";
+import { Button } from '@/components/ui/button';
+import oneShellImg from '@/assets/oneshell.jpg';
 
 const Hero = () => {
   return (

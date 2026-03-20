@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Photography from "./components/Photography";
-import Footer from "./components/Footer";
+import { useEffect, useState } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Photography from './components/Photography';
+import Footer from './components/Footer';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,9 +18,9 @@ function App() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 

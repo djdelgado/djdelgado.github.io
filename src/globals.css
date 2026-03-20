@@ -56,7 +56,7 @@
   body {
     @apply font-[Nunito] antialiased bg-background text-foreground;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
@@ -74,10 +74,21 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  background: linear-gradient(180deg, rgba(22, 22, 22, .3) 0, rgba(22, 22, 22, .7) 75%, #161616), url(src/assets/oneshell.jpg);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(22, 22, 22, 0.3) 0,
+      rgba(22, 22, 22, 0.7) 75%,
+      #161616
+    ),
+    url(src/assets/oneshell.jpg);
 
-  h1, h2 {
-    background: -webkit-linear-gradient(hsla(0, 0%, 100%, .9), hsla(0, 0%, 100%, .3));
+  h1,
+  h2 {
+    background: -webkit-linear-gradient(
+      hsla(0, 0%, 100%, 0.9),
+      hsla(0, 0%, 100%, 0.3)
+    );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -89,31 +100,41 @@
 }
 
 .AvatarRoot {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	vertical-align: middle;
-	overflow: hidden;
-	user-select: none;
-	width: 15rem;
-	height: 15rem;
-	border-radius: 100%;
-	background-color: var(--black-a3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  user-select: none;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  background-color: var(--black-a3);
 }
 
 .AvatarImage {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
 }
 
 #about {
-    padding-top: 10rem;
-    background: linear-gradient(180deg, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8));
+  padding-top: 10rem;
+  background: linear-gradient(
+    180deg,
+    #161616 0,
+    rgba(22, 22, 22, 0.9) 75%,
+    rgba(22, 22, 22, 0.8)
+  );
 }
 
 #projects {
-    padding-top: 10rem;
-    background: linear-gradient(180deg, rgba(22, 22, 22, .8), rgba(22, 22, 22, .7) 75%, rgba(22, 22, 22, .6));
+  padding-top: 10rem;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 22, 22, 0.8),
+    rgba(22, 22, 22, 0.7) 75%,
+    rgba(22, 22, 22, 0.6)
+  );
 }

@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 interface NavbarProps {
   isScrolled: boolean;
@@ -16,16 +16,16 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
   return (
     <nav
       className={cn(
-        "fixed w-full z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-stone-100 shadow-md py-2"
-          : "bg-transparent py-4"
+        'fixed w-full z-50 transition-all duration-300',
+        isScrolled ? 'bg-stone-100 shadow-md py-2' : 'bg-transparent py-4'
       )}
     >
-      <div className={cn(
-        "container mx-auto px-4 flex items-center",
-        isScrolled ? "justify-between" : "justify-end"
-      )}>
+      <div
+        className={cn(
+          'container mx-auto px-4 flex items-center',
+          isScrolled ? 'justify-between' : 'justify-end'
+        )}
+      >
         {/* Logo - Only visible when scrolled */}
         {isScrolled && (
           <a
@@ -40,10 +40,7 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
         <Button
           variant="ghost"
           size="sm"
-          className={cn(
-            "md:hidden",
-            isScrolled ? "text-black" : "text-white"
-          )}
+          className={cn('md:hidden', isScrolled ? 'text-black' : 'text-white')}
           onClick={toggleMenu}
         >
           Menu
@@ -51,13 +48,13 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
 
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-6">
-          {["About", "Projects", "Photography"].map((item) => (
+          {['About', 'Projects', 'Photography'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
               className={cn(
-                "hover:opacity-75 transition-opacity",
-                isScrolled ? "text-black" : "text-white"
+                'hover:opacity-75 transition-opacity',
+                isScrolled ? 'text-black' : 'text-white'
               )}
             >
               {item}
@@ -68,7 +65,7 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
         {/* Mobile menu dropdown */}
         {isMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-white shadow-md py-4 px-4 md:hidden">
-            {["About", "Projects", "Photography"].map((item) => (
+            {['About', 'Projects', 'Photography'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
