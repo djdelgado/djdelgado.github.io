@@ -47,7 +47,6 @@ src/
 - **TypeScript**: Type safety (somewhat relaxed config)
 - **Vite**: Build tool with fast HMR
 - **Tailwind CSS + Radix UI**: Component library and styling system
-- **React Router**: Used (imported in package.json)
 
 ### Build System
 
